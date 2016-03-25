@@ -1,4 +1,4 @@
-package solveMeFirst;
+package Algorithms.Warmup.solveMeFirst;
 
 import java.util.Scanner;
 

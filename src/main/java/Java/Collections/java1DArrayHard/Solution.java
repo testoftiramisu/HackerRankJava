@@ -7,9 +7,9 @@ public class Solution {
 
     public static void main(String[] args) {
         final int number = scanner.nextInt();
+        final int ZERO_INDEX = 0;
 
         for (int i = 0; i < number; i++) {
-            boolean win = false;
             int size = scanner.nextInt();
             int jump = scanner.nextInt();
             int[] array = new int[size];
@@ -18,28 +18,25 @@ public class Solution {
                 array[j] = scanner.nextInt();
             }
 
-            for (int j = 0; j < size; j++) {
-                if (j + jump >= size || j + 1 == size) {
-                    win = true;
-                    break;
-                }
-                if ((j + jump < size) && (array[j + 1] == 1) && ((j + jump) < size) && (array[j + jump] == 1)) {
-                    break;
-                } else {
-                    if (array[j + 1] != 1) {
-                        j++;
-                    } else if ((array[j + jump] != 1) && (j + jump < size)) {
-                        j += jump;
-                    }
-                }
-            }
-
-            if (win) {
+            if (isWinning(ZERO_INDEX, jump, array)) {
                 System.out.println("YES");
             } else {
                 System.out.println("NO");
             }
         }
+    }
+
+    private static boolean isWinning(int j, int jump, int[] array) {
+        if (j < 0 || array[j] == 1) {
+            return false;
+        } else if ((j == array.length - 1) || j + jump > array.length - 1) {
+            return true;
+        }
+
+        array[j] = 1;
+
+        return isWinning(j + 1, jump, array) || isWinning(j - 1, jump, array) || isWinning(j + jump, jump, array);
+
     }
 }
 

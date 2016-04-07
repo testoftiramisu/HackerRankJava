@@ -8,9 +8,8 @@ public class Solution {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-
         int testCases = Integer.parseInt(scanner.nextLine());
-        while(testCases>0){
+        while (testCases > 0) {
             String pattern = scanner.nextLine();
             try {
                 Pattern.compile(pattern);
@@ -19,5 +18,6 @@ public class Solution {
                 System.out.println("Invalid");
             }
         }
+        scanner.close();
     }
 }

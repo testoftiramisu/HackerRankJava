@@ -8,6 +8,7 @@ public class Solution {
     public static void main(String[] args) {
         String input = scanner.nextLine();
         System.out.println(convert(input));
+        scanner.close();
     }
 
     public static String convert(String input) {

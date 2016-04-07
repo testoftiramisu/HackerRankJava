@@ -21,9 +21,10 @@ class MyBook extends Book {
 }
 
 public class Solution {
+    private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String title = sc.nextLine();
+        String title = scanner.nextLine();
         MyBook new_novel = new MyBook();
         new_novel.setTitle(title);
         System.out.println("The title is: " + new_novel.getTitle());

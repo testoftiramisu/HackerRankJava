@@ -26,7 +26,6 @@ public class Solution {
             if (!findMatch) {
                 System.out.println("None");
             }
-
             testCases--;
         }
     }

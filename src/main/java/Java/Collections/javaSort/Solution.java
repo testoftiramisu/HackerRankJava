@@ -28,15 +28,16 @@ class Student {
 }
 
 public class Solution {
+    private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int testCases = Integer.parseInt(in.nextLine());
+        int testCases = Integer.parseInt(scanner.nextLine());
 
         List<Student> studentList = new ArrayList<>();
         while (testCases > 0) {
-            int id = in.nextInt();
-            String name = in.next();
-            double cgpa = in.nextDouble();
+            int id = scanner.nextInt();
+            String name = scanner.next();
+            double cgpa = scanner.nextDouble();
 
             Student st = new Student(id, name, cgpa);
             studentList.add(st);

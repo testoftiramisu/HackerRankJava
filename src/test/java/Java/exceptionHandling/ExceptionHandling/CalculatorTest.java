@@ -1,4 +1,4 @@
-package Java.exceptionHandling.ExceptionHandling;
+package Java.ExceptionHandling.ExceptionHandling;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

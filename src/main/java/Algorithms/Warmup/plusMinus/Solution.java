@@ -1,4 +1,4 @@
-package Algorithms.Warmup.plusMinus;
+package Algorithms.Warmup.PlusMinus;
 
 import java.util.ArrayList;
 import java.util.List;

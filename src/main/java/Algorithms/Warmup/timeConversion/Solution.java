@@ -1,4 +1,4 @@
-package Algorithms.Warmup.timeConversion;
+package Algorithms.Warmup.TimeConversion;
 
 import java.util.Scanner;
 

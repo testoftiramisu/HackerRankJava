@@ -1,4 +1,4 @@
-package Algorithms.Warmup.ifElse;
+package Algorithms.Warmup.IfElse;
 
 import java.util.Scanner;
 

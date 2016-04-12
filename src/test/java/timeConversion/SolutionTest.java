@@ -1,6 +1,6 @@
 package timeConversion;
 
-import Algorithms.Warmup.timeConversion.Solution;
+import Algorithms.Warmup.TimeConversion.Solution;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

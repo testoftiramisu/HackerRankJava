@@ -1,4 +1,4 @@
-package ThirtyDaysOfCode.Day4.ClassVSInstance;
+package ThirtyDaysOfCode.Day4.ClassVsInstance;
 
 import java.util.Scanner;
 

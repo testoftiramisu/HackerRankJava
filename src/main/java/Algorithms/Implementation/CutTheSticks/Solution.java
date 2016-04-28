@@ -14,7 +14,6 @@ public class Solution {
             array[i] = scanner.nextInt();
         }
 
-
         int smallest = findSmallest(array);
         int count = 0;
 

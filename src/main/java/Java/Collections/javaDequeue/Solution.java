@@ -13,7 +13,6 @@ class Solution {
         int max = 0;
 
         for (int i = 0; i < n; i++) {
-
             if (deque.size() == m) {
                 int value = deque.removeFirst();
                 numberCounts.put(value, numberCounts.get(value) - 1);

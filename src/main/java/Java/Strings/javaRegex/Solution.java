@@ -12,7 +12,7 @@ public class Solution {
         while(scanner.hasNext())
         {
             String IP = scanner.next();
-            System.out.println(IP.matches(new MyRegex().pattern));
+            System.out.println(IP.matches(MyRegex.pattern));
         }
     }
 }

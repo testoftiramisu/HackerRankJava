@@ -45,7 +45,7 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
 
         // when
-        Throwable thrown = catchThrowable(() -> {calculator.power(-1, 4);});
+        Throwable thrown = catchThrowable(() -> calculator.power(-1, 4));
 
         // then
         assertThat(thrown).isInstanceOf(java.lang.Exception.class)

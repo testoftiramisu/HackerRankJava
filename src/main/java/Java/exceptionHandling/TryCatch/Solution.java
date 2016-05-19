@@ -6,11 +6,15 @@ import java.util.Scanner;
 public class Solution {
     private static Scanner scanner = new Scanner(System.in);
 
+    public static int getResult(int a, int b) throws ArithmeticException{
+        return a / b;
+    }
+
     public static void main(String[] args) {
         try {
             int a = scanner.nextInt();
             int b = scanner.nextInt();
-            int result = a / b;
+            int result = getResult(a, b);
             System.out.println(result);
         } catch (InputMismatchException ime) {
             System.out.println(ime.getClass().getName());
